@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* wrapper */
+.wrapper {
+    margin: 10px auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sections {
+    width: 80%;
+    min-height: 240px;
+    margin: 7px;
+    padding: 20px 25px;
+    background-color: #e9edee;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#topContent {
+    overflow-x: auto;
+}
+
+#textArea {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding: 13px;
+}
+
+#topContainer>div {
+    width: 100%;
+}
+
+#topContainer p {
+    line-height: 30px;
+}
+
+#bottomContainerEdit {
+    display: none;
+    width: 100%;
+}
+
+#bottomContainerStyle {
+    width: 100%;
+    display: flex;
+}
+
+#bottomContainerStyle p {
+    font-weight: 500;
+    line-height: 25px;
+    margin: 0 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bigText {
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+
+.bigText2 {
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* battons style*/
+[type="button"] {
+    padding: 10px;
+    margin: 2px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+#editBatton {
+    background-color: #ffbc00;
+    color: #000;
+}
+
+#styleBatton {
+    background-color: #0e95b7;
+}
+
+#addBatton {
+    background-color: #e44540;
+}
+
+#saveBatton,
+#createTable,
+#creteList {
+    background-color: #38a645;
+}
+
+/* bottomContainerStyle */
+label {
+    margin: 0 2px;
+}
+
+.textColors,
+.backgrColors {
+    background-color: rgba(119, 116, 116, 0.712);
+}
+
+/* radio batton */
+label {
+    user-select: none;
+}
+
+[type="radio"],
+#tableDiv,
+#createList,
+#sectionListTable {
+    display: none;
+}
+
+[type="radio"]+span::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 6px rgba(219, 217, 217, 0.945);
+    border: 0.1px solid rgba(201, 197, 197, 0.127);
+}
+
+[type="radio"]:checked+span::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 4px rgba(8, 156, 255, 1)
+}
+
+/* checkbox */
+[type="checkbox"] {
+    display: none;
+}
+
+#check {
+    display: flex;
+}
+
+[type="checkbox"]+span::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 9px 7px 0 7px;
+    border: 1px solid rgba(11, 98, 139, 0.5);
+    border-radius: 3px;
+}
+
+[type="checkbox"]:checked+span::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 9px 7px 0 7px;
+    border: 1px solid rgba(11, 98, 139, 0.11);
+    background-image: url(check-square-solid1.png);
+    border-radius: 3px;
+    background-size: 100% 100%;
+}
+
+[type="text"],
+select {
+    border-radius: 3px;
+    border: 1px solid rgba(119, 116, 116, 0.312);
+    margin: 0 4px;
+    padding: 3px;
+}
+
+/* Selection Foont Famili */
+#selectFamili {
+    width: 30%;
+    margin: 0 4px;
+    padding: 3px;
+}
+
+#inputColor,
+#inputBox {
+    width: 50%;
+}
+
+#inputBox {
+    display: none;
+}
+
+/* boxColors */
+#inputColor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colorsTextBox,
+.colorsBgBox {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.colorsTextBox>div,
+.colorsBgBox>div {
+    height: 50px;
+    width: 50px;
+}
+
+.colorsTextBox>div>p,
+.colorsBgBox>div>p {
+    display: none;
+}
+
+/* Box white table */
+.tableBox {
+    display: flex;
+}
+
+#textInputTR,
+#textInputTD,
+#topAdd,
+#tableBox>div>form,
+#widthTd,
+#heightTd,
+#createList,
+#styleMarcs,
+#countLi {
+    width: 100%;
+}
+
+#styleMarcs {
+    margin: 0;
+}
+
+.textBox,
+#textRow {
+    line-height: 24px;
+    width: 15%;
+}
+
+.formBox {
+    width: 85%;
+}
+
+.formBox>form>input,
+.textBox>p {
+    display: flex;
+    flex-direction: column;
+    margin: 12px 0;
+}
+
+.widthOfBorders {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.widthOfBorders>p {
+    margin-top: 4px;
+}
+
+/* Last row of "topAdd" */
+.widthOfBorder {
+    display: flex;
+    flex-direction: row;
+    width: 53%;
+}
+
+.widthOfBorders>[type="text"],
+#selTypyBorder,
+#selColorBorder {
+    margin: 0;
+    width: 20%;
+}
+
+.widthOfBorders>p {
+    width: 20%;
+    text-align: center;
+}
+
+/* Table style */
+table {
+    border-collapse: collapse;
+}

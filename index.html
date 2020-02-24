@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Top Section -->
+        <section id="topContainer" class="sections none">
+            <div id="topContent">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </section>
+        <!-- Table & List section -->
+        <section class="sections" id="sectionListTable">
+            <div id="topAdd">
+                <p class="bigText">Choose what you want:</p>
+                <form action="" for="radio" id="tableOrList">
+                    <label>
+                        <input type="radio" name="addBox"><span>table</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="addBox"><span>list</span>
+                    </label>
+                </form>
+                <!-- Table Container -->
+                <div id="tableDiv">
+                    <div class="tableBox">
+                        <div class="textBox">
+                            <p>Count TR:</p>
+                            <p>Count TD:</p>
+                        </div>
+                        <div class="formBox">
+                            <form action="#">
+                                <input type="text" placeholder="Count TR:" id="textInputTR">
+                                <input type="text" placeholder="Count TD:" id="textInputTD">
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Style for table -->
+                    <p class="bigText2">Add style to your table:</p>
+                    <div class="tableBox">
+                        <div class="textBox">
+                            <p>Width of TD:</p>
+                            <p>Height of TD:</p>
+                            <p>Width of border:</p>
+                        </div>
+                        <!-- Forms of style table -->
+                        <div class="formBox">
+                            <form action="#">
+                                <input type="text" placeholder="Width of TD:" id="widthTd">
+                                <input type="text" placeholder="Height of TD:" id="heightTd">
+                                <div class="widthOfBorders">
+                                    <form action="" class="widthOfBorder">
+                                        <input type="text" id="widthBorder" placeholder="Width:">
+                                        <!-- Type of border -->
+                                        <p>Type of border:</p>
+                                        <select name="" id="selTypyBorder">
+                                            <option selected value="solid">solid</option>
+                                            <option value="dotted">dotted</option>
+                                            <option value="dashed">dashed</option>
+                                            <option value="double">double</option>
+                                        </select>
+                                        <!-- Color of Border -->
+                                        <p>Color of Border:</p>
+                                        <select name="" id="selColorBorder">
+                                            <option selected value="black">black</option>
+                                            <option value="red">red</option>
+                                            <option value="blue">blue</option>
+                                            <option value="green">green</option>
+                                        </select>
+                                    </form>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <input type="button" value="Create table" id="createTable">
+                </div>
+                <!-- List containet -->
+                <div id="createList">
+                    <div class="tableBox">
+                        <div class="textBox">
+                            <p>Count li:</p>
+                            <p>Type of marks:</p>
+                            <form action="#">
+                                <input type="button" id="creteList" value="Crete List">
+                            </form>
+                        </div>
+                        <!-- Style & Count of Li -->
+                        <div class="formBox">
+                            <form action="">
+                                <input type="text" placeholder="Count li:" id="countLi">
+                                <select name="" id="styleMarcs">
+                                    <option selected value="circle">circle</option>
+                                    <option value="disc">disc</option>
+                                    <option value="square">square</option>
+                                </select>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Edit & Style section -->
+        <section id="sectionBatton" class="none">
+            <input type="button" id="editBatton" value="edit">
+            <input type="button" id="styleBatton" value="style">
+        </section>
+        <!-- Textarea & Style text -->
+        <section class="sections none">
+            <div id="bottomContainerEdit">
+                <textarea name="" id="textArea"></textarea>
+                <input type="button" id="addBatton" value="add">
+                <input type="button" id="saveBatton" value="save">
+                <div id="tartar"></div>
+            </div>
+            <!-- #########bottomContainerStyle######### -->
+            <div id="bottomContainerStyle">
+                <div id="inputBox">
+                    <!-- Font Size -->
+                    <form action="" name="fontSizes" for="radio">
+                        <p>Font Size:</p>
+                        <label for="s12px">
+                            <input type="radio" name="rb" id="s12px" value="12"><span>12px</span>
+                        </label>
+                        <label for="s14px">
+                            <input type="radio" name="rb" checked id="s14px" value="14"><span>14px</span>
+                        </label>
+                        <label for="s16px">
+                            <input type="radio" name="rb" id="s16px" value="16"><span>16px</span>
+                        </label>
+                        <label for="s18px">
+                            <input type="radio" name="rb" id="s18px" value="18"><span>18px</span>
+                        </label>
+                        <label for="s20px">
+                            <input type="radio" name="rb" id="s20px" value="20"><span>20px</span>
+                        </label>
+                    </form>
+                    <!-- Font Family -->
+                    <form name="fameily" action="">
+                        <p>Font Family:</p>
+                        <select name="selFamily" id="selectFamili">
+                            <option hidden value="medium">Choose option</option>
+                            <option value="cursive">cursive</option>
+                            <option value="fantasy">fantasy</option>
+                            <option value="monospace">monospase</option>
+                            <option value="sans-serif">sans-serif</option>
+                        </select>
+                    </form>
+                    <!-- Bottons whit Colors -->
+                    <p>Colors:</p>
+                    <input type="button" class="textColors" value="Color of text">
+                    <input type="button" class="backgrColors" value="Background color">
+                    <p>Style:</p>
+                    <div id="check">
+                        <!-- Bold text -->
+                        <form action="#" name="bold">
+                            <label>
+                                <input type="checkbox" name="boldText" id="bold"><span>Bold text </span>
+                            </label>
+                        </form>
+                        <!-- Cursive text -->
+                        <form action="#" name="cursive">
+                            <label for="cursive">
+                                <input type="checkbox" name="cursiveText" id="cursive"><span>Cursive text </span>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+                <!-- Color text containet -->
+                <div id="inputColor">
+                    <div class="colorsTextBox">
+                        <div>
+                            <p>#d53e45</p>
+                        </div>
+                        <div>
+                            <p>#287fff</p>
+                        </div>
+                        <div>
+                            <p>#39a545</p>
+                        </div>
+                        <div>
+                            <p>#343b40</p>
+                        </div>
+                        <div>
+                            <p>#fcc100</p>
+                        </div>
+                        <div>
+                            <p>#e2498b</p>
+                        </div>
+                        <div>
+                            <p>#ffffff</p>
+                        </div>
+                        <div>
+                            <p>#6f48c1</p>
+                        </div>
+                        <div>
+                            <p>#32a1b9</p>
+                        </div>
+                    </div>
+                    <!-- Background color container -->
+                    <div class="colorsBgBox">
+                        <div>
+                            <p>#d53e45</p>
+                        </div>
+                        <div>
+                            <p>#287fff</p>
+                        </div>
+                        <div>
+                            <p>#39a545</p>
+                        </div>
+                        <div>
+                            <p>#343b40</p>
+                        </div>
+                        <div>
+                            <p>#fcc100</p>
+                        </div>
+                        <div>
+                            <p>#e2498b</p>
+                        </div>
+                        <div>
+                            <p>#ffffff</p>
+                        </div>
+                        <div>
+                            <p>#6f48c1</p>
+                        </div>
+                        <div>
+                            <p>#32a1b9</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
